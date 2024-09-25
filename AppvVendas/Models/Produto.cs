@@ -18,8 +18,8 @@ namespace AppvVendas.Models
         [Display(Name = "Estoque atual?")]
         public double QtadeEstoque { get; set; }
         [Display(Name = "Ativo?")]
-        public bool CadastroAtivo { get; set; } = true;
-
+        public bool? CadastroAtivo { get; set; } = true;
+        [Display(Name = "categoria")]
 
         /*chave Estrangeira*/
         [Required(ErrorMessage = "Por favor, selcione uma categoria!")]
