@@ -30,7 +30,8 @@ namespace AppvVendas.Migrations
 
                     b.Property<string>("CategoriaName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.HasKey("CategoriaId");
 
